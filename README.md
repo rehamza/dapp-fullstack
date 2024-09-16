@@ -36,7 +36,7 @@ chat id is rquired you can get from db
 
 
 
-# Project Setup Instruction Manual:
+# Project Setup Instruction Manually:
 
 1. Need to install postgresql on your local system
 2. For Backend application: Move to "backend" directory 
@@ -51,11 +51,17 @@ chat id is rquired you can get from db
 5. the rest of steps are same for wallet connect and telegram bot API
 
 
+# Test case for Backend:
+
+1. you need to setup manually using "Project Setup Instruction Manually"
+   - npm run test or npm test
+
 
 # Extra and optional instruction:
 
 - if you found any error like dapp database not exist you can add manually
 for the docker use these
+
 ### Enter the postgres container
 docker exec -it postgres bash
 
@@ -68,3 +74,14 @@ CREATE DATABASE dapp;
 ### Exit psql and the container
 \q
 exit
+
+# Create a Telegram Bot
+- Use BotFather to Create a New Bot
+•	Open Telegram and search for the BotFather.
+•	Start a chat with BotFather and send the command /newbot.
+•	Follow the prompts to set a name and username for your bot.
+•	After creation, BotFather will provide you with a bot token.
+
+# Ngrok
+ngrok config add-authtoken your-toke-key-from-ngrok
+
